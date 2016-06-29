@@ -6,7 +6,7 @@ Copyright (C) 2016, [Gianpaolo Macario](https://gmacario.github.io/)
 
 ## Assigned IP addresses in TINC network `ninuxto`
 
-According to <http://wiki.ninux.org/GestioneIndirizzi>, Torino has been assigned subnet `10.23.0.0/16`.
+According to <http://wiki.ninux.org/GestioneIndirizzi>, IPv4 subnet `10.23.0.0/16` has been assigned to ninux-torino.
 
 | VPN_IP_Address | Hostname    | Admin    | OS_Version          | Notes                 |
 |----------------|-------------|----------|---------------------|-----------------------|
