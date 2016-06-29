@@ -21,6 +21,7 @@ According to <http://wiki.ninux.org/GestioneIndirizzi>, IPv4 subnet `10.23.0.0/1
 
 ## See also
 
+* [Configuring TINC `ninuxto` on a UDOO NEO](configuring-tinc-ninuxto-on-udoobuntu2.md)
 * http://wiki.ninux.org/GestioneIndirizzi
 
 <!-- EOF -->
