@@ -18,6 +18,7 @@ According to <http://wiki.ninux.org/GestioneIndirizzi>, IPv4 subnet `10.23.0.0/1
 | ...            |             |          |                     |                         |
 | 10.23.3.31     | udooneogm01 | gmacario | UDOObuntu2.0rc2     | UDOO NEO Full           |
 | 10.23.3.32/28  | -           | gmacario | -                   | Reserved for fv_pev_net |
+| 10.23.3.33     | ardyungm33  | gmacario | OpenWrt-Yun         | Gateway for fv_pev_net  |
 | ...            |             |          |                     |                         |
 
 ## See also
