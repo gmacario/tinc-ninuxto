@@ -1,4 +1,4 @@
-Subnet = 10.23.3.33/28
+Subnet = 10.23.3.33/32
 
 -----BEGIN RSA PUBLIC KEY-----
 MIICCgKCAgEA3wimqMZa8Qtka1xjJ7JKgSFnE08nOHGmgNFshUmTyWhHqyK90nfD
