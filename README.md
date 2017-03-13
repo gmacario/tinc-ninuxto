@@ -2,7 +2,7 @@
 
 Ninux-Torino TINC network configuration
 
-Copyright (C) 2016, [Gianpaolo Macario](https://gmacario.github.io/)
+Copyright (C) 2016-2017, [Gianpaolo Macario](https://gmacario.github.io/)
 
 ## Assigned IP addresses inside TINC network `ninuxto`
 
@@ -21,7 +21,7 @@ According to <http://wiki.ninux.org/GestioneIndirizzi>, IPv4 subnet `10.23.0.0/1
 | ...            |             |          |                     |                                |
 | 10.23.3.30     | udooneomv30 | gmacario | UDOObuntu2.0rc2     | UDOO NEO Full + lora-shield    |
 | 10.23.3.31     | udooneogm01 | gmacario | UDOObuntu2.0rc2     | UDOO NEO Full                  |
-| 10.23.3.32     | -           | gmacario | -                   | -                              |
+| 10.23.3.32     | chipgm32    | gmacario | Debian 8 (jessie)   | C.H.I.P.                       |
 | 10.23.3.33     | ardyungm33  | gmacario | OpenWrt-Yun 1.5.3   | Gateway for solpev             |
 | ...            |             |          |                     |                                |
 | 10.23.4.1      | udooneogp01 | muwattalli | UDOObuntu2.0rc2   | UDOO NEO Full                  |
