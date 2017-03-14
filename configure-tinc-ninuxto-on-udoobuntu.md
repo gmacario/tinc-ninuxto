@@ -66,6 +66,8 @@ dpkg -l tinc
 dpkg -L tinc
 ```
 
+#### Configure TINC for network `ninuxto`
+
 Clone the "gmacario/tinc-ninuxto" repository from GitHub
 
 ```
@@ -111,7 +113,17 @@ then submit a Pull Request to <https://github.com/gmacario/tinc-ninuxto> with
 * A new line in the table at `README.md` to mark the IP address you chose
 * Your **public** key `/etc/tinc/ninuxto/hosts/udooneo1234` under `hosts/`
 
-### Enabling VPN at boot
+After the PR is merged, update the gmacario/tinc-ninuxto repository in all your peer nodes (i.e. tincgw21, rpi3gm23) to make sure the new node is recognized.
+
+#### Test connectivity to network `ninuxto`
+
+Try connecting to TINC network ninuxto
+
+```
+sudo tincd -n ninuxto --no-detach -d7
+```
+
+#### Automatically connect at boot
 
 To have TINC network `ninuxto` active at boot, do the following
 
