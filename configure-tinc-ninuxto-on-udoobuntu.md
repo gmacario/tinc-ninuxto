@@ -90,6 +90,8 @@ sudo cp ~/MYGIT/tinc-ninuxto/sample-tinc.conf /etc/tinc/ninuxto/tinc.conf
 sudo vi /etc/tinc/ninuxto/tinc.conf      (Adjust Name="udooneo1234")
 ```
 
+**NOTE**: Make sure the name as spelled in `tinc.conf` does only contain letters and digits (no spaces, hashes, etc.)
+
 ```
 sudo cp ~/MYGIT/tinc-ninuxto/sample-tinc-up /etc/tinc/ninuxto/tinc-up
 sudo vi /etc/tinc/ninuxto/tinc-up        (Choose an available IP Address according to the table at README.md)
@@ -105,7 +107,7 @@ sudo chmod 755 /etc/tinc/ninuxto/tinc-down
 Create a public/private key pair if they do not exist
 
 ```
-[ ! -e /etc/tinc/ninuxto/rsa_key.priv ] && tincd -n ninuxto -K4096
+sudo sh -c "[ ! -e /etc/tinc/ninuxto/rsa_key.priv ] && tincd -n ninuxto -K4096"
 ```
 
 then submit a Pull Request to <https://github.com/gmacario/tinc-ninuxto> with
