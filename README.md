@@ -25,8 +25,6 @@ According to <http://wiki.ninux.org/GestioneIndirizzi>, IPv4 subnet `10.23.0.0/1
 | 10.23.3.32     | chipgm32      | gmacario   | Debian GNU/Linux 8 (jessie)       | C.H.I.P.                       |
 | 10.23.3.33     | ardyungm33    | gmacario   | OpenWrt-Yun 1.5.3                 | Gateway for solpev             |
 | ...            |               |            |                                   |                                |
-| 10.23.4.1      | udooneogp01   | muwattalli | UDOObuntu2.0rc2                   | UDOO NEO Full                  |
-| ...            |               |            |                                   |                                |
 
 ## See also
 
