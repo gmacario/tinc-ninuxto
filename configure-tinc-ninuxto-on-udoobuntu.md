@@ -73,14 +73,14 @@ dpkg -L tinc
 Clone the "gmacario/tinc-ninuxto" repository from GitHub
 
 ```
-mkdir -p ~/MYGIT
-cd ~/MYGIT && [ ! -e tinc-ninuxto ] && git clone https://github.com/gmacario/tinc-ninuxto
+mkdir -p ~/github/gmacario
+cd ~/github/gmacario && [ ! -e tinc-ninuxto ] && git clone https://github.com/gmacario/tinc-ninuxto
 ```
 
 Create the local TINC configuration
 
 ```
-cd ~/MYGIT/tinc-ninuxto && git pull --all --prune && \
+cd ~/github/gmacario/tinc-ninuxto && git pull --all --prune && \
   sudo mkdir -p /etc/tinc/ninuxto/hosts/ && \
   sudo rsync -avz hosts/ /etc/tinc/ninuxto/hosts/
 ```
@@ -88,20 +88,20 @@ cd ~/MYGIT/tinc-ninuxto && git pull --all --prune && \
 Customize TINC configuration files starting from some templates
 
 ```
-sudo cp ~/MYGIT/tinc-ninuxto/sample-tinc.conf /etc/tinc/ninuxto/tinc.conf
+sudo cp ~/github/gmacario/tinc-ninuxto/sample-tinc.conf /etc/tinc/ninuxto/tinc.conf
 sudo vi /etc/tinc/ninuxto/tinc.conf      (Adjust Name="udooneo1234")
 ```
 
 **NOTE**: Make sure the name as spelled in `tinc.conf` does only contain letters and digits (no spaces, hashes, etc.)
 
 ```
-sudo cp ~/MYGIT/tinc-ninuxto/sample-tinc-up /etc/tinc/ninuxto/tinc-up
+sudo cp ~/github/gmacario/tinc-ninuxto/sample-tinc-up /etc/tinc/ninuxto/tinc-up
 sudo vi /etc/tinc/ninuxto/tinc-up        (Choose an available IP Address according to the table at README.md)
 sudo chmod 755 /etc/tinc/ninuxto/tinc-up
 ```
 
 ```
-sudo cp ~/MYGIT/tinc-ninuxto/sample-tinc-down /etc/tinc/ninuxto/tinc-down
+sudo cp ~/github/gmacario/tinc-ninuxto/sample-tinc-down /etc/tinc/ninuxto/tinc-down
 sudo vi /etc/tinc/ninuxto/tinc-down      (Everything should be OK, but double check)
 sudo chmod 755 /etc/tinc/ninuxto/tinc-down
 ```
