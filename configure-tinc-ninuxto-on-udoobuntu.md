@@ -43,7 +43,7 @@ Configure hostname (let us choose `udooneo1234` in this example)
 
 ```
 echo "udooneo1234" | sudo tee /etc/hostname
-sudo vi /etc/hosts      (Replace all occurrences of "udooneo" with the new hostname)
+sudo vi /etc/hosts      # Replace all occurrences of "udooneo" with the new hostname
 ```
 
 #### Install required packages
@@ -89,20 +89,20 @@ Customize TINC configuration files starting from some templates
 
 ```
 sudo cp ~/github/gmacario/tinc-ninuxto/sample-tinc.conf /etc/tinc/ninuxto/tinc.conf
-sudo vi /etc/tinc/ninuxto/tinc.conf      (Adjust Name="udooneo1234")
+sudo vi /etc/tinc/ninuxto/tinc.conf      # Adjust Name="udooneo1234"
 ```
 
 **NOTE**: Make sure the name as spelled in `tinc.conf` does only contain letters and digits (no spaces, hashes, etc.)
 
 ```
 sudo cp ~/github/gmacario/tinc-ninuxto/sample-tinc-up /etc/tinc/ninuxto/tinc-up
-sudo vi /etc/tinc/ninuxto/tinc-up        (Choose an available IP Address according to the table at README.md)
+sudo vi /etc/tinc/ninuxto/tinc-up        # Choose an available IPv4 address according to the table at README.md
 sudo chmod 755 /etc/tinc/ninuxto/tinc-up
 ```
 
 ```
 sudo cp ~/github/gmacario/tinc-ninuxto/sample-tinc-down /etc/tinc/ninuxto/tinc-down
-sudo vi /etc/tinc/ninuxto/tinc-down      (Everything should be OK, but double check)
+sudo vi /etc/tinc/ninuxto/tinc-down      # Everything should be OK, but double check
 sudo chmod 755 /etc/tinc/ninuxto/tinc-down
 ```
 
