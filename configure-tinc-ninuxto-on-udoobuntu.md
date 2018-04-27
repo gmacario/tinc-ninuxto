@@ -15,10 +15,12 @@ The following instructions should also work for a generic host running Ubuntu 14
 
 #### Prepare your UDOO NEO
 
-* Download the UDOObuntu image from <http://www.udoo.org/downloads/>
-* Uncompress the file just downloaded
-* Write the MicroSD Card with file `udoobuntu-udoo-neo-desktop_2.1.2.img`
-* Insert the MicroSD Card into the UDOO NEO
+* Browse <http://www.udoo.org/downloads/>
+  - Click on tab "UDOO NEO"
+  - Download "UDOObuntu 2.2.0 Minimal (14.04 LTS) from "MIRROR EU"
+* Download and install [Etcher](https://etcher.io/) for your host OS
+* Run Etcher and write the MicroSD Card with file `udoobuntu-udoo-neo-minimal_2.2.0.zip`
+* Insert the MicroSD Card into your UDOO NEO
 * Connect the UDOO NEO to your router through an Ethernet cable
 * Power up the UDOO NEO
 * Use the [Fing App](https://www.fing.io/) or similar tools to identify the IP address assigned to your UDOO NEO
