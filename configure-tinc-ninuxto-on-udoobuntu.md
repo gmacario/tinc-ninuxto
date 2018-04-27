@@ -1,19 +1,19 @@
 # Configuring TINC `ninuxto` on a UDOO NEO
 
-### Introduction
+## Introduction
 
 This document explains how to configure a [UDOO NEO](http://www.udoo.org/udoo-neo/) board to connect to TINC network `ninuxto`.
 
 The following instructions should also work for a generic host running Ubuntu 14.04 or later.
 
-### Prerequisites
+## Prerequisites
 
 * One [UDOO NEO Full](http://www.udoo.org/udoo-neo/) connected to Internet via Ethernet
 * A blank MicroSD Card  (>= 8 GB)
 
-### Step-by-step instructions
+## Step-by-step instructions
 
-#### Prepare your UDOO NEO
+### Prepare your UDOO NEO
 
 * Browse <http://www.udoo.org/downloads/>
   - Click on tab "UDOO NEO"
@@ -27,7 +27,7 @@ The following instructions should also work for a generic host running Ubuntu 14
 
 Login to your UDOO Neo via Remote Terminal (i.e. browse <http://assigned_ip_address:8000/>) - or via a [serial console](http://gmacario.github.io/howto/udoo/neo/embedded/software/development/2015/11/08/connecting-to-udoo-neo-serial-console.html)
 
-#### Change default password
+### Change default password
 
 Logged as user `udooer`, change default password:
 
@@ -37,7 +37,7 @@ passwd udooer
 
 Logout and login to apply the changes
 
-#### Change default hostname 
+### Change default hostname 
 
 Configure hostname (let us choose `udooneo1234` in this example)
 
@@ -46,7 +46,7 @@ echo "udooneo1234" | sudo tee /etc/hostname
 sudo vi /etc/hosts      # Replace all occurrences of "udooneo" with the new hostname
 ```
 
-#### Install required packages
+### Install required packages
 
 Update installed Ubuntu packages, then reboot your UDOO NEO to activate the changes
 
@@ -68,7 +68,7 @@ dpkg -l tinc
 dpkg -L tinc
 ```
 
-#### Configure TINC for network `ninuxto`
+### Configure TINC for network `ninuxto`
 
 Clone the "gmacario/tinc-ninuxto" repository from GitHub
 
@@ -119,7 +119,7 @@ then submit a Pull Request to <https://github.com/gmacario/tinc-ninuxto> with
 
 After the PR is merged, update the gmacario/tinc-ninuxto repository in all your peer nodes (i.e. tincgw21, rpi3gm23) to make sure the new node is recognized.
 
-#### Test connectivity to network `ninuxto`
+### Test connectivity to network `ninuxto`
 
 Try connecting to TINC network ninuxto
 
@@ -127,7 +127,7 @@ Try connecting to TINC network ninuxto
 sudo tincd -n ninuxto --no-detach -d7
 ```
 
-#### Automatically connect at boot
+### Automatically connect at boot
 
 To have TINC network `ninuxto` active at boot, do the following
 
