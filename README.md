@@ -23,7 +23,7 @@ According to <http://wiki.ninux.org/GestioneIndirizzi>, IPv4 subnet `10.23.0.0/1
 | ...            |               |            |                                   |                                |
 | 10.23.3.30     | udooneomv30   | gmacario   | UDOObuntu2.0rc2                   | UDOO NEO Full + lora-shield    |
 | 10.23.3.31     | udooneogm01   | gmacario   | UDOObuntu 2.2.0 Minimal (14.04 LTS) | UDOO NEO Full                |
-| 10.23.3.32     | udooneogm02   | gmacario   | UDOObuntu 2.2.0 Minimal (14.04 LTS) | UDOO NEO Extended            |
+| 10.23.3.32     | udooneogm02   | gmacario   | UDOObuntu 2.2.0 Desktop (14.04 LTS) | UDOO NEO Extended            |
 | 10.23.3.33     | ardyungm33    | gmacario   | OpenWrt-Yun 1.5.3                 | Gateway for solpev             |
 | ...            |               |            |                                   |                                |
 
