@@ -20,6 +20,7 @@ According to <http://wiki.ninux.org/GestioneIndirizzi>, IPv4 subnet `10.23.0.0/1
 | 10.23.3.23     | rpi3gm23      | gmacario   | Raspbian GNU/Linux 8 (jessie)     | Gateway for gmhome             |
 | 10.23.3.24     | itmgmacariow7 | gmacario   | Ubuntu-desktop 16.04.4 LTS 64-bit (Xenial Xerus) | Laptop Dell Precision |
 | 10.23.3.25     | rpi2gm89      | gmacario   | Raspbian GNU/Linux 9 (stretch)    | Raspberry Pi 2                 |
+| 10.23.3.26     | rpi3gm26      | gmacario   | Raspbian Stretch Lite April 2018  | Raspberry Pi 3B                |
 | ...            |               |            |                                   |                                |
 | 10.23.3.30     | udooneomv30   | gmacario   | UDOObuntu2.0rc2                   | UDOO NEO Full + lora-shield    |
 | 10.23.3.31     | udooneogm01   | gmacario   | UDOObuntu 2.2.0 Minimal (14.04 LTS) | UDOO NEO Full                |
