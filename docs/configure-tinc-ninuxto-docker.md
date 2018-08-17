@@ -51,6 +51,14 @@ For more examples and ideas, visit:
 gmacario@iongmacario:~$
 ```
 
+#### Print tinc command line help
+
+Login as gmacario@iongmacario
+
+```shell
+docker run --rm jenserat/tinc --help
+```
+
 #### Prepare the configuration
 
 Login as gmacario@iongmacario
@@ -114,11 +122,7 @@ docker run -d --rm \
 
 ### Runtime commands
 
-#### Print tinc command line help
-
-```shell
-docker run --rm jenserat/tinc --help
-```
+When the tinc daemon is running in a container you can issue runtime commands as arguments to `docker exec tinc ...`
 
 #### Dump reachable nodes
 
