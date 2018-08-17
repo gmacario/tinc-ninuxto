@@ -13,6 +13,8 @@
 * A host running Docker CE 18.03
   - Tested on iongmacario (Ubuntu 18.04.1 LTS 64-bit)
   
+### Install tinc in a Docker container
+
 #### Verify prerequisites
 
 Login as gmacario@iongmacario and try running a Docker container
@@ -49,16 +51,9 @@ For more examples and ideas, visit:
 gmacario@iongmacario:~$
 ```
 
-
-### Install tinc in a Docker container
+#### Prepare the configuration
 
 Login as gmacario@iongmacario
-
-Print tinc command line help
-
-```shell
-docker run --rm jenserat/tinc --help
-```
 
 Create configuration file
 
@@ -75,6 +70,7 @@ cd $HOME/tinc-config/ninuxto/hosts
 sudo chown $USER .
 curl -O -L https://github.com/gmacario/tinc-ninuxto/raw/master/hosts/rpi3gm23
 curl -O -L https://github.com/gmacario/tinc-ninuxto/raw/master/hosts/tincgw21
+chmod 644 *
 ```
 
 Modify the initial configuration
@@ -86,8 +82,7 @@ docker run --rm --volume $HOME/tinc-config:/etc/tinc jenserat/tinc \
   -n ninuxto add connectto rpi3gm23
 ```
 
-
-Edit `$HOME/tinc-config/ninuxto/tinc-up`
+Configure script `$HOME/tinc-config/ninuxto/tinc-up`
 
 ```diff
 gmacario@iongmacario:~/tinc-config/ninuxto$ diff -uw tinc-up.ORIG tinc-up
@@ -104,7 +99,7 @@ gmacario@iongmacario:~/tinc-config/ninuxto$ diff -uw tinc-up.ORIG tinc-up
 gmacario@iongmacario:~/tinc-config/ninuxto$
 ```
 
-Run TINC
+#### Start tinc daemon
 
 ```shell
 docker run -d --rm \
@@ -118,6 +113,12 @@ docker run -d --rm \
 ```
 
 ### Runtime commands
+
+#### Print tinc command line help
+
+```shell
+docker run --rm jenserat/tinc --help
+```
 
 #### Dump reachable nodes
 
