@@ -78,7 +78,8 @@ cd $HOME/tinc-config/ninuxto/hosts
 sudo chown $USER .
 curl -O -L https://github.com/gmacario/tinc-ninuxto/raw/master/hosts/rpi3gm23
 curl -O -L https://github.com/gmacario/tinc-ninuxto/raw/master/hosts/tincgw21
-chmod 644 *
+curl -O -L https://github.com/gmacario/tinc-ninuxto/raw/master/hosts/udooneogm01
+sudo chmod 644 *
 ```
 
 Modify the initial configuration
@@ -88,6 +89,8 @@ docker run --rm --volume $HOME/tinc-config:/etc/tinc jenserat/tinc \
   -n ninuxto add subnet 10.23.3.27/32
 docker run --rm --volume $HOME/tinc-config:/etc/tinc jenserat/tinc \
   -n ninuxto add connectto rpi3gm23
+docker run --rm --volume $HOME/tinc-config:/etc/tinc jenserat/tinc \
+  -n ninuxto add connectto udooneogm01
 ```
 
 Configure script `$HOME/tinc-config/ninuxto/tinc-up`
