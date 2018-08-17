@@ -117,7 +117,9 @@ docker run -d --rm \
   start -D -n ninuxto -U nobody -d0
 ```
 
-### Dump reachable nodes
+### Runtime commands
+
+#### Dump reachable nodes
 
 <!-- 2018-08-17 07:48 CEST -->
 
@@ -126,7 +128,7 @@ docker exec tinc \
   tinc -n ninuxto dump reachable nodes
 ```
 
-### Dump network as a digraph
+#### Dump network as a digraph
 
 <!-- 2018-08-17 08:12 CEST -->
 
@@ -177,7 +179,7 @@ docker exec tinc \
 
 Alternatively view it online with <http://sandbox.kidstrythisathome.com/erdos/>
 
-### Display information about a node
+#### Display information about a node
 
 Example:
 
@@ -196,7 +198,7 @@ Subnets:      10.23.3.21
 gmacario@iongmacario:~/tinc-config/ninuxto$
 ```
 
-### Display runtime network statistics
+#### Display runtime network statistics
 
 ```shell
 docker exec -ti tinc \
