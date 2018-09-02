@@ -11,8 +11,12 @@
 ### Prerequisites
 
 * A host running Docker CE 18.03
-  - Tested on iongmacario (Ubuntu 18.04.1 LTS 64-bit)
-  
+* A uniquely assigned IP address - For ninux-torino this is something like _10.23.X.Y_
+
+The following instruction have been tested on host "iongmacario"
+- Host OS: Ubuntu 18.04.1 LTS 64-bit
+- Assigned IP Address/range: 10.23.3.27/32
+
 ### Install tinc in a Docker container
 
 #### Verify prerequisites
@@ -81,18 +85,18 @@ curl -O -L https://github.com/gmacario/tinc-ninuxto/raw/master/hosts/udooneogm01
 sudo chmod 644 *
 ```
 
-Modify the initial configuration
+Modify the initial configuration (replace `10.23.X.Y/32` with your assigned IP address / range)
 
 ```shell
 docker run --rm --volume $HOME/tinc-config:/etc/tinc jenserat/tinc \
-  -n ninuxto add subnet 10.23.3.27/32
+  -n ninuxto add subnet 10.23.X.Y/32
 docker run --rm --volume $HOME/tinc-config:/etc/tinc jenserat/tinc \
   -n ninuxto add connectto rpi3gm23
 docker run --rm --volume $HOME/tinc-config:/etc/tinc jenserat/tinc \
   -n ninuxto add connectto udooneogm01
 ```
 
-Configure script `$HOME/tinc-config/ninuxto/tinc-up`
+Configure script `$HOME/tinc-config/ninuxto/tinc-up` - (again, replace `10.23.X.Y` with your assigned IP address)
 
 ```diff
 gmacario@iongmacario:~/tinc-config/ninuxto$ diff -uw tinc-up.ORIG tinc-up
@@ -102,12 +106,18 @@ gmacario@iongmacario:~/tinc-config/ninuxto$ diff -uw tinc-up.ORIG tinc-up
  #!/bin/sh
 
 -echo 'Unconfigured tinc-up script, please edit '$0'!'
-+ifconfig $INTERFACE 10.23.3.27 netmask 255.255.0.0
++ifconfig $INTERFACE 10.23.X.Y netmask 255.255.0.0
 
 -#ifconfig $INTERFACE <your vpn IP address> netmask <netmask of whole VPN>
 +# EOF
 gmacario@iongmacario:~/tinc-config/ninuxto$
 ```
+
+TODO: Submit a new <https://github.com/gmacario/tinc-ninuxto/pulls> with the configuration of the new node
+
+TODO: Update configuration on peer hosts (rpi3gm23, udooneogm01) to recognize the new node
+
+TODO: Start tinc daemon in debug mode
 
 #### Start tinc daemon
 
@@ -121,6 +131,8 @@ docker run -d --rm \
   jenserat/tinc \
   start -D -n ninuxto -U nobody -d0
 ```
+
+TODO: How to ensure the container is restarted when the host is rebooted?
 
 ### Runtime commands
 
