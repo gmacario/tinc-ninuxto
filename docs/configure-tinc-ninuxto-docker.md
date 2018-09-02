@@ -77,7 +77,6 @@ Add known hosts
 cd $HOME/tinc-config/ninuxto/hosts
 sudo chown $USER .
 curl -O -L https://github.com/gmacario/tinc-ninuxto/raw/master/hosts/rpi3gm23
-curl -O -L https://github.com/gmacario/tinc-ninuxto/raw/master/hosts/tincgw21
 curl -O -L https://github.com/gmacario/tinc-ninuxto/raw/master/hosts/udooneogm01
 sudo chmod 644 *
 ```
