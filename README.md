@@ -29,7 +29,9 @@ According to<https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assig
 | 10.23.3.32     | udooneogm02   | gmacario   | UDOObuntu 2.2.0 Desktop (14.04 LTS) | UDOO NEO Extended            |
 | 10.23.3.33     | ardyungm33    | gmacario   | OpenWrt-Yun 1.5.3                 | Gateway for solpev             |
 | ...            |               |            |                                   |                                |
-| 10.23.4.0/24   | -             | mtoscano   | -                                 | Subnet reserved for mtoscano   |
+| 10.23.4.0/24   | -             | MarcoTo    | -                                 | Subnet reserved for Marco Toscano   |
+| ...            |               |            |                                   |                                |
+| 10.23.5.0/24   | -             | 61615m1    | -                                 | Subnet reserved for Luigi      |
 | ...            |               |            |                                   |                                |
 
 ## See also
