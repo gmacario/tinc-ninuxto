@@ -33,6 +33,8 @@ According to<https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assig
 | ...            |               |            |                                   |                                |
 | 10.23.5.0/24   | -             | 61615m1    | -                                 | Subnet reserved for Luigi      |
 | ...            |               |            |                                   |                                |
+| 10.23.6.0/24   | -             | [Muwattalli](https://github.com/muwattalli) | - | Subnet reserved to Gianfranco Poncini |
+| ...            |               |            |                                   |                                |
 
 ## See also
 
