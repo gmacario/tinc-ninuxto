@@ -34,6 +34,7 @@ According to <http://wiki.ninux.org/GestioneIndirizzi>, IPv4 subnet `10.23.0.0/1
 
 * [Configuring TINC `ninuxto` on a UDOO NEO](docs/configure-tinc-ninuxto-on-udoobuntu.md)
 * [Running TINC `ninuxto` inside a Docker container](docs/configure-tinc-ninuxto-docker.md)
-* http://wiki.ninux.org/GestioneIndirizzi
+* Ninux - Gestione Indirizzi: <https://ipam.ninux.org/>
+  * Previously done through http://wiki.ninux.org/GestioneIndirizzi
 
 <!-- EOF -->
