@@ -10,10 +10,11 @@
 
 ### Prerequisites
 
-* A host running Docker CE 18.03
+* A host running Docker CE 18.03 (called _mynode_ from now on)
+* Login credentials to the same host (called _user@mynode_ from now on) allowing `sudo` and `docker` commands
 * A uniquely assigned IP address - For ninux-torino this is something like _10.23.X.Y_
 
-The following instruction have been tested on host "iongmacario"
+The following instruction have been tested on host `iongmacario`
 - Host OS: Ubuntu 18.04.1 LTS 64-bit
 - Assigned IP Address/range: 10.23.3.27/32
 
@@ -21,7 +22,7 @@ The following instruction have been tested on host "iongmacario"
 
 #### Verify prerequisites
 
-Login as gmacario@iongmacario and try running a Docker container
+Login as _user@mynode_ and try running a Docker container
 
 ```
 gmacario@iongmacario:~$ docker run hello-world
@@ -57,7 +58,7 @@ gmacario@iongmacario:~$
 
 #### Print tinc command line help
 
-Login as gmacario@iongmacario
+Login as _user@mynode_
 
 ```shell
 docker run --rm jenserat/tinc --help
@@ -65,9 +66,17 @@ docker run --rm jenserat/tinc --help
 
 #### Prepare the configuration
 
-Login as gmacario@iongmacario
+Login as _user@mynode_
 
-Create configuration file
+Create the TINC configuration file (NOTE: Replace _mynode_ with the actual name of your node):
+
+```shell
+mkdir -p $HOME/tinc-config
+docker run --rm --volume $HOME/tinc-config:/etc/tinc jenserat/tinc \
+  -n ninuxto init mynode
+```
+
+Example:
 
 ```shell
 mkdir -p $HOME/tinc-config
@@ -121,6 +130,8 @@ TODO: Start tinc daemon in debug mode
 
 #### Start tinc daemon
 
+Logged as _user@mynode_
+
 ```shell
 docker run -d --rm \
   --name tinc \
@@ -142,6 +153,8 @@ When the tinc daemon is running in a container you can issue runtime commands as
 
 <!-- 2018-08-17 07:48 CEST -->
 
+Logged as _user@mynode_
+
 ```shell
 docker exec tinc \
   tinc -n ninuxto dump reachable nodes
@@ -150,6 +163,8 @@ docker exec tinc \
 #### Dump network as a digraph
 
 <!-- 2018-08-17 08:12 CEST -->
+
+Logged as _user@mynode_
 
 ```shell
 docker exec tinc \
@@ -200,6 +215,12 @@ Alternatively view it online with <http://sandbox.kidstrythisathome.com/erdos/>
 
 #### Display information about a node
 
+Logged as _user@mynode_
+
+```shell
+docker exec tinc tinc -n ninuxto info anothernode
+```
+
 Example:
 
 ```
@@ -218,6 +239,8 @@ gmacario@iongmacario:~/tinc-config/ninuxto$
 ```
 
 #### Display runtime network statistics
+
+Logged as _user@mynode_
 
 ```shell
 docker exec -ti tinc \
