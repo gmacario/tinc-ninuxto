@@ -6,12 +6,12 @@ Copyright (C) 2016-2018, [Gianpaolo Macario](https://gmacario.github.io/)
 
 ## Assigned IP addresses inside TINC network `ninuxto`
 
-According to<https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assigned to ninux-torino.
+According to <https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assigned to ninux-torino.
 
 | VPN_IP_Address | Hostname      | Admin      | OS_Version                        | Notes                          |
 |----------------|---------------|------------|-----------------------------------|--------------------------------|
 | ...            |               |            |                                   |                                |
-| 10.23.3.0/24   | -             | gmacario   | -                                 | Subnet reserved for gmacario   |
+| 10.23.3.0/24   | -             | gmacario   | -                                 | Subnet reserved to gmacario    |
 | 10.23.3.1      | tincgm01      | gmacario   | Ubuntu 16.04 64-bit               | Test VM on VirtualBox          |
 | ...            |               |            |                                   |                                |
 | 10.23.3.20     | kruk          | gmacario   | Ubuntu 16.04 64-bit               | gateway for gmoffice           |
@@ -29,9 +29,9 @@ According to<https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assig
 | 10.23.3.32     | udooneogm02   | gmacario   | UDOObuntu 2.2.0 Desktop (14.04 LTS) | UDOO NEO Extended            |
 | 10.23.3.33     | ardyungm33    | gmacario   | OpenWrt-Yun 1.5.3                 | Gateway for solpev             |
 | ...            |               |            |                                   |                                |
-| 10.23.4.0/24   | -             | MarcoTo    | -                                 | Subnet reserved for Marco Toscano   |
+| 10.23.4.0/24   | -             | MarcoTo    | -                                 | Subnet reserved to Marco Toscano |
 | ...            |               |            |                                   |                                |
-| 10.23.5.0/24   | -             | 61615m1    | -                                 | Subnet reserved for Luigi      |
+| 10.23.5.0/24   | -             | 61615m1    | -                                 | Subnet reserved to Luigi       |
 | ...            |               |            |                                   |                                |
 | 10.23.6.0/24   | -             | [Muwattalli](https://github.com/muwattalli) | - | Subnet reserved to Gianfranco Poncini |
 | ...            |               |            |                                   |                                |
