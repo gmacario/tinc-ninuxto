@@ -23,7 +23,7 @@ According to <https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assi
 | 10.23.3.26     | rpi3gm26      | gmacario   | Raspbian Stretch Lite April 2018  | Raspberry Pi 3B                |
 | 10.23.3.27     | iongmacario   | gmacario   | Ubuntu 18.04.1 64-bit             | Inside a Docker container      |
 | 10.23.3.28     | rpi3pgm28     | gmacario   | Raspbian Stretch Lite June 2018   | Raspberry Pi 3B Plus           |
-| ...            |               |            |                                   |                                |
+| 10.23.3.29     | rpi3pgm29     | gmacario   | Raspbian Stretch Desktop June 2018 | Raspberry Pi 3B Plus in RasPad |
 | 10.23.3.30     | udooneomv30   | gmacario   | UDOObuntu2.0rc2                   | UDOO NEO Full + lora-shield    |
 | 10.23.3.31     | udooneogm01   | gmacario   | UDOObuntu 2.2.0 Minimal (14.04 LTS) | UDOO NEO Full                |
 | 10.23.3.32     | udooneogm02   | gmacario   | UDOObuntu 2.2.0 Desktop (14.04 LTS) | UDOO NEO Extended            |
