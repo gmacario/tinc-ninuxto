@@ -2,7 +2,7 @@
 
 Ninux-Torino TINC network configuration
 
-Copyright (C) 2016-2018, [Gianpaolo Macario](https://gmacario.github.io/)
+Copyright (C) 2016-2019, [Gianpaolo Macario](https://gmacario.github.io/)
 
 ## Assigned IP addresses inside TINC network `ninuxto`
 
@@ -28,6 +28,7 @@ According to <https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assi
 | 10.23.3.31     | udooneogm01   | gmacario   | UDOObuntu 2.2.0 Minimal (14.04 LTS) | UDOO NEO Full                |
 | 10.23.3.32     | udooneogm02   | gmacario   | UDOObuntu 2.2.0 Desktop (14.04 LTS) | UDOO NEO Extended            |
 | 10.23.3.33     | ardyungm33    | gmacario   | OpenWrt-Yun 1.5.3                 | Gateway for solpev             |
+| 10.23.3.34     | udoox86gm1    | gmacario   | Ubuntu 18.04.2 LTS 64-bit         | New gateway for solpev         |
 | ...            |               |            |                                   |                                |
 | 10.23.4.0/24   | -             | MarcoTo    | -                                 | Subnet reserved to Marco Toscano |
 | ...            |               |            |                                   |                                |
