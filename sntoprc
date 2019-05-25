@@ -1,0 +1,74 @@
+# File: sntoprc
+# Configuration file for sntop - a top-like console network status tool
+#
+# Usage
+#     sudo apt -y install sntop
+#     man sntop
+
+# === TINC network ninuxto ===
+# See https://github.com/gmacario/tinc-ninuxto
+
+# tincgm01
+# 10.23.3.1
+# Test VM on VirtualBox
+
+# kruk # 10.23.3.20 # Gateway for gmoffice
+
+# tincgw21 # 10.23.3.21 # Instance for AWS
+
+# mygmcont22 # 10.23.3.22 # Inside a Docker container
+
+rpi3gm23
+10.23.3.23
+Gateway for gmhome
+
+# itmgmacariow7 # 10.23.3.24 # Laptop Dell Precision
+
+rpi2gm89
+10.23.3.25
+Raspberry Pi 2
+
+# rpi3gm23 # 10.23.3.26 # Raspberry Pi 3B
+
+iongmacario
+10.23.3.27
+Inside a Docker container
+
+# rpi3gm23 # 10.23.3.28 # Raspberry Pi 3B Plus
+
+# rpi3gm29 # 10.23.3.29 # Raspberry Pi 3B Plus in RasPad
+
+# udooneomv30 # 10.23.3.30 # UDOO NEO Full + lora-shield
+
+udooneogm01
+10.23.3.31
+UDOO NEO Full
+
+udooneogm02
+10.23.3.32
+UDOO NEO Extended
+
+# ardyungm33
+# 10.23.3.33
+# Old gateway for solpev
+
+udoox86gm1
+10.23.3.34
+New gateway for solpev
+
+
+# === Others ===
+
+# Gator				# display name
+# 192.168.23.1			# IP or host
+# local linux/alpha server	# display comments
+
+Yahoo
+www.yahoo.com
+something on the outside
+
+localhost
+127.0.0.1
+does loopback even work?
+
+# EOF
