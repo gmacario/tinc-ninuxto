@@ -17,7 +17,7 @@ Display sntop inside a terminal on the UDOO NEO:
 
 ```shell
 export DISPLAY=:0
-lxterminal --geometry=100x25 --title="snop TINC ninuxto" -e sntop -f sntoprc-ninuxto
+lxterminal --geometry=100x25 --title="sntop TINC ninuxto" -e sntop -f sntoprc-ninuxto
 ```
 
 <!-- EOF -->
