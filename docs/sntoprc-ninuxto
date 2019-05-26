@@ -28,13 +28,13 @@ rpi2gm89
 10.23.3.25
 Raspberry Pi 2
 
-# rpi3gm23 # 10.23.3.26 # Raspberry Pi 3B
+# rpi3gm26 # 10.23.3.26 # Raspberry Pi 3B
 
 iongmacario
 10.23.3.27
 Inside a Docker container
 
-# rpi3gm23 # 10.23.3.28 # Raspberry Pi 3B Plus
+# rpi3gm28 # 10.23.3.28 # Raspberry Pi 3B Plus
 
 # rpi3gm29 # 10.23.3.29 # Raspberry Pi 3B Plus in RasPad
 
@@ -48,9 +48,9 @@ udooneogm02
 10.23.3.32
 UDOO NEO Extended
 
-# ardyungm33
-# 10.23.3.33
-# Old gateway for solpev
+ardyungm33
+10.23.3.33
+Arduino Yun (old solpev gateway)
 
 udoox86gm1
 10.23.3.34
