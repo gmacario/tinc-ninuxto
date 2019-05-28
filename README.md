@@ -11,7 +11,7 @@ According to <https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assi
 | VPN_IP_Address | Hostname      | Admin      | OS_Version                        | Notes                          |
 |----------------|---------------|------------|-----------------------------------|--------------------------------|
 | ...            |               |            |                                   |                                |
-| 10.23.3.0/24   | -             | gmacario   | -                                 | Subnet reserved to gmacario    |
+| 10.23.3.0/24   | -             | [gmacario](https://github.com/gmacario) | -    | Subnet reserved to Gianpaolo Macario |
 | 10.23.3.1      | tincgm01      | gmacario   | Ubuntu 16.04 64-bit               | Test VM on VirtualBox          |
 | ...            |               |            |                                   |                                |
 | 10.23.3.20     | kruk          | gmacario   | Ubuntu 16.04 64-bit               | gateway for gmoffice           |
@@ -32,11 +32,11 @@ According to <https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assi
 | ...            |               |            |                                   |                                |
 | 10.23.4.0/24   | -             | MarcoTo    | -                                 | Subnet reserved to Marco Toscano |
 | ...            |               |            |                                   |                                |
-| 10.23.5.0/24   | -             | 61615m1    | -                                 | Subnet reserved to Luigi       |
+| 10.23.5.0/24   | -             | 61615m1    | -                                 | Subnet reserved to Luigi Smiraglio |
 | ...            |               |            |                                   |                                |
 | 10.23.6.0/24   | -             | [Muwattalli](https://github.com/muwattalli) | - | Subnet reserved to Gianfranco Poncini |
 | ...            |               |            |                                   |                                |
-| 10.23.25.0/24  |               | [GTeti](https://github.com/gteti)      |                                   |  Subnet reserved to Gianluca   |
+| 10.23.25.0/24  |               | [GTeti](https://github.com/gteti) | -          |  Subnet reserved to Gianluca Teti |
 | 10.23.25.2     |rpi2gt64       | GTeti      | Raspbian 9.9                      | Raspberry Pi 2                 |
 | ...            |               |            |                                   |                                |
 
