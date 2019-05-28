@@ -55,7 +55,7 @@ sudo apt-get update && sudo apt-get -y dist-upgrade
 sudo reboot
 ```
 
-As soon as the host is up and running, login as `udooer@udooneogm01`, then install TINC and other required pacakges
+As soon as the host is up and running, login as `udooer@udooneogm01`, then install TINC and other required packages
 
 ```
 sudo apt-get -y install git rsync tinc
