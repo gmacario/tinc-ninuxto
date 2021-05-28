@@ -31,7 +31,7 @@ Login to your UDOO Neo via Remote Terminal (i.e. browse <http://assigned_ip_addr
 
 Logged as user `udooer`, change default password:
 
-```
+```bash
 passwd udooer
 ```
 
@@ -41,7 +41,7 @@ Logout and login to apply the changes
 
 Configure hostname (let us choose `udooneo1234` in this example)
 
-```
+```bash
 echo "udooneo1234" | sudo tee /etc/hostname
 sudo vi /etc/hosts      # Replace all occurrences of "udooneo" with the new hostname
 ```
@@ -50,20 +50,20 @@ sudo vi /etc/hosts      # Replace all occurrences of "udooneo" with the new host
 
 Update installed Ubuntu packages, then reboot your UDOO NEO to activate the changes
 
-```
+```bash
 sudo apt-get update && sudo apt-get -y dist-upgrade
 sudo reboot
 ```
 
 As soon as the host is up and running, login as `udooer@udooneogm01`, then install TINC and other required packages
 
-```
+```bash
 sudo apt-get -y install git rsync tinc
 ```
 
 (Optional) Verify the correct installation of tinc
 
-```
+```bash
 dpkg -l tinc
 dpkg -L tinc
 ```
@@ -72,14 +72,14 @@ dpkg -L tinc
 
 Clone the "gmacario/tinc-ninuxto" repository from GitHub
 
-```
+```bash
 mkdir -p ~/github/gmacario
 cd ~/github/gmacario && [ ! -e tinc-ninuxto ] && git clone https://github.com/gmacario/tinc-ninuxto
 ```
 
 Create the local TINC configuration
 
-```
+```bash
 cd ~/github/gmacario/tinc-ninuxto && git pull --all --prune && \
   sudo mkdir -p /etc/tinc/ninuxto/hosts/ && \
   sudo rsync -avz hosts/ /etc/tinc/ninuxto/hosts/
@@ -87,20 +87,20 @@ cd ~/github/gmacario/tinc-ninuxto && git pull --all --prune && \
 
 Customize TINC configuration files starting from some templates
 
-```
+```bash
 sudo cp ~/github/gmacario/tinc-ninuxto/sample-tinc.conf /etc/tinc/ninuxto/tinc.conf
 sudo vi /etc/tinc/ninuxto/tinc.conf      # Adjust Name="udooneo1234"
 ```
 
 **NOTE**: Make sure the name as spelled in `tinc.conf` does only contain letters and digits (no spaces, hashes, etc.)
 
-```
+```bash
 sudo cp ~/github/gmacario/tinc-ninuxto/sample-tinc-up /etc/tinc/ninuxto/tinc-up
 sudo vi /etc/tinc/ninuxto/tinc-up        # Choose an available IPv4 address according to the table at README.md
 sudo chmod 755 /etc/tinc/ninuxto/tinc-up
 ```
 
-```
+```bash
 sudo cp ~/github/gmacario/tinc-ninuxto/sample-tinc-down /etc/tinc/ninuxto/tinc-down
 sudo vi /etc/tinc/ninuxto/tinc-down      # Everything should be OK, but double check
 sudo chmod 755 /etc/tinc/ninuxto/tinc-down
@@ -108,7 +108,7 @@ sudo chmod 755 /etc/tinc/ninuxto/tinc-down
 
 Create a public/private key pair if they do not exist
 
-```
+```bash
 sudo sh -c "[ ! -e /etc/tinc/ninuxto/rsa_key.priv ] && tincd -n ninuxto -K4096"
 ```
 
@@ -123,7 +123,7 @@ After the PR is merged, update the gmacario/tinc-ninuxto repository in all your 
 
 Try connecting to TINC network ninuxto
 
-```
+```bash
 sudo tincd -n ninuxto --no-detach -d7
 ```
 
@@ -131,7 +131,7 @@ sudo tincd -n ninuxto --no-detach -d7
 
 To have TINC network `ninuxto` active at boot, do the following
 
-```
+```bash
 echo "ninuxto" | sudo tee -a /etc/tinc/nets.boot
 sudo service tinc restart
 ```
