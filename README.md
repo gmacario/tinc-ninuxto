@@ -2,7 +2,7 @@
 
 Ninux-Torino TINC network configuration
 
-Copyright (C) 2016-2020, [Gianpaolo Macario](https://gmacario.github.io/)
+Copyright (C) 2016-2021, [Gianpaolo Macario](https://gmacario.github.io/)
 
 ## Assigned IP addresses inside TINC network `ninuxto`
 
