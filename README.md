@@ -47,6 +47,6 @@ According to <https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assi
 * [Running TINC `ninuxto` inside a Docker container](docs/configure-tinc-ninuxto-docker.md)
 * Gestione Indirizzi di Ninux.org: <https://ipam.ninux.org/>
   * LAN Subnet Ninux.org Torino: 10.23.0.0/16
-  * Ninux.org addresses previously managed with http://wiki.ninux.org/GestioneIndirizzi
+  * Ninux.org addresses previously managed with <http://wiki.ninux.org/GestioneIndirizzi>
 
 <!-- EOF -->

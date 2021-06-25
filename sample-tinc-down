@@ -1,5 +1,5 @@
 #!/bin/sh
 
-ifconfig $INTERFACE down
+ifconfig "$INTERFACE" down
 
 # EOF

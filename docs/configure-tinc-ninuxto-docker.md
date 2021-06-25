@@ -2,13 +2,13 @@
 
 <!-- 2018-08-16 19:30 CEST -->
 
-### References 
+## References
 
 * Docker image sources: <https://github.com/JensErat/docker-tinc>
 * tinc v1.1 manual: <https://www.tinc-vpn.org/documentation-1.1/>
 * tinc VPN homepage: <https://www.tinc-vpn.org/>
 
-### Prerequisites
+## Prerequisites
 
 * A host running Docker CE 18.03 (called _mynode_ from now on)
 * Login credentials to the same host (called _user@mynode_ from now on) allowing `sudo` and `docker` commands
@@ -18,13 +18,13 @@ The following instruction have been tested on host `iongmacario`
 - Host OS: Ubuntu 18.04.1 LTS 64-bit
 - Assigned IP Address/range: 10.23.3.27/32
 
-### Install tinc in a Docker container
+## Install tinc in a Docker container
 
-#### Verify prerequisites
+### Verify prerequisites
 
 Login as _user@mynode_ and try running a Docker container
 
-```
+```text
 gmacario@iongmacario:~$ docker run hello-world
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
@@ -56,7 +56,7 @@ For more examples and ideas, visit:
 gmacario@iongmacario:~$
 ```
 
-#### Print tinc command line help
+### Print tinc command line help
 
 Login as _user@mynode_
 
@@ -64,7 +64,7 @@ Login as _user@mynode_
 docker run --rm jenserat/tinc --help
 ```
 
-#### Prepare the configuration
+### Prepare the configuration
 
 Login as _user@mynode_
 
@@ -128,7 +128,7 @@ TODO: Update configuration on peer hosts (rpi3gm23, udooneogm01) to recognize th
 
 TODO: Start tinc daemon in debug mode
 
-#### Start tinc daemon
+### Start tinc daemon
 
 Logged as _user@mynode_
 
@@ -145,11 +145,11 @@ docker run -d --rm \
 
 TODO: How to ensure the container is restarted when the host is rebooted?
 
-### Runtime commands
+## Runtime commands
 
 When the tinc daemon is running in a container you can issue runtime commands as arguments to `docker exec tinc ...`
 
-#### Dump reachable nodes
+### Dump reachable nodes
 
 <!-- 2018-08-17 07:48 CEST -->
 
@@ -160,7 +160,7 @@ docker exec tinc \
   tinc -n ninuxto dump reachable nodes
 ```
 
-#### Dump network as a digraph
+### Dump network as a digraph
 
 <!-- 2018-08-17 08:12 CEST -->
 
@@ -173,7 +173,7 @@ docker exec tinc \
 
 Result:
 
-```
+```json
 digraph {
  ardyungm33 [label = "ardyungm33", color = "red"];
  chipgm32 [label = "chipgm32", color = "red"];
@@ -213,7 +213,7 @@ docker exec tinc \
 
 Alternatively view it online with <http://sandbox.kidstrythisathome.com/erdos/>
 
-#### Display information about a node
+### Display information about a node
 
 Logged as _user@mynode_
 
@@ -223,7 +223,7 @@ docker exec tinc tinc -n ninuxto info anothernode
 
 Example:
 
-```
+```bash
 gmacario@iongmacario:~/tinc-config/ninuxto$ docker exec tinc  tinc -n ninuxto info tincgw21
 Node:         tincgw21
 Node ID:      d33bffc03796
@@ -238,7 +238,7 @@ Subnets:      10.23.3.21
 gmacario@iongmacario:~/tinc-config/ninuxto$
 ```
 
-#### Display runtime network statistics
+### Display runtime network statistics
 
 Logged as _user@mynode_
 
