@@ -37,7 +37,7 @@ passwd udooer
 
 Logout and login to apply the changes
 
-### Change default hostname 
+### Change default hostname
 
 Configure hostname (let us choose `udooneo1234` in this example)
 
