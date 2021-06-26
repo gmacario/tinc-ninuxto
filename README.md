@@ -36,9 +36,11 @@ According to <https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assi
 | ...            |               |            |                                     |                                |
 | 10.23.6.0/24   | -             | [Muwattalli](https://github.com/muwattalli) | -  | Subnet reserved to Gianfranco Poncini |
 | ...            |               |            |                                     |                                |
-| 10.23.25.0/24  |               | [GTeti](https://github.com/gteti) | -            |  Subnet reserved to Gianluca Teti |
+| 10.23.25.0/24  |               | [GTeti](https://github.com/gteti) | -            | Subnet reserved to Gianluca Teti |
 | 10.23.25.2     |rpi2gt64       | GTeti      | Raspbian 9.9                        | Raspberry Pi 2                 |
 | 10.23.25.25    |ubuntugt       | GTeti      | Ubuntu 19                           | VM                             |
+| ...            |               |            |                                     |                                |
+| 10.23.26.0/24  | -             | [GGn0](https://github.com/GGn0) | -              | Subnet reserved to Luigi Scalzone |
 | ...            |               |            |                                     |                                |
 
 ## See also
