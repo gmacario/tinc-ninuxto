@@ -21,7 +21,7 @@ According to <https://ipam.ninux.org/>, IPv4 subnet `10.23.0.0/16` has been assi
 | 10.23.3.24     | itmgmacariow7 | gmacario   | Ubuntu-desktop 16.04.4 LTS 64-bit (Xenial Xerus) | Laptop Dell Precision |
 | 10.23.3.25     | rpi2gm89      | gmacario   | Raspbian GNU/Linux 9 (stretch)    | Raspberry Pi 2                 |
 | 10.23.3.26     | rpi3gm26      | gmacario   | Raspbian Stretch Lite April 2018  | Raspberry Pi 3B                |
-| 10.23.3.27     | iongmacario   | gmacario   | Ubuntu 18.04.1 64-bit             | Inside a Docker container      |
+| 10.23.3.27     | iongmacario   | gmacario   | Ubuntu 20.04.2 LTS 64-bit         | Inside a Docker container      |
 | 10.23.3.28     | rpi3pgm28     | gmacario   | Raspbian Stretch Lite June 2018   | Raspberry Pi 3B Plus           |
 | 10.23.3.29     | rpi3pgm29     | gmacario   | Raspbian Stretch Desktop June 2018 | Raspberry Pi 3B Plus in RasPad |
 | 10.23.3.30     | udooneomv30   | gmacario   | UDOObuntu2.0rc2                   | UDOO NEO Full + lora-shield    |
